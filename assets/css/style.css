@@ -111,7 +111,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Content */
 .home-banner {
-  background-image: url('images/background.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/background.jpg');
   background-size: cover;
 }
 
@@ -141,20 +141,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .transparent-box {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 8px;
-  overflow: hidden;
   width: 100%;
   max-width: 100%;
   padding: 3rem;
   text-align: center;
-  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  cursor: pointer;
-}
-
-.transparent-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  transition: .3s;
 }
 
 .card-img-top {
@@ -175,7 +166,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .card-hoverable {
-  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  transition: .3s;
   cursor: pointer;
 }
 
@@ -191,9 +182,27 @@ body::-webkit-scrollbar-thumb:hover {
 .resume-dl-btn {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  transition: .4s;
+  transition: .3s;
+  border-width: medium;
+  border-color: #fff;
+  color: #fff;
 }
 
 .resume-dl-btn:hover {
-  box-shadow: 0px 0px 10px #fff;
+  background: #fff;
+  color: #000;
+}
+
+.intro-name-text {
+  color: red;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.zoom {
+  transition: .3s;
+  cursor: pointer;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
 }
