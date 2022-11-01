@@ -186,6 +186,10 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
+.card-margin {
+  margin: 15px;
+}
+
 .resume-dl-btn {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
