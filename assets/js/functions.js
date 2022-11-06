@@ -6,3 +6,7 @@ window.addEventListener('scroll', () => { bsCollapse.hide() })
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { bsCollapse.hide() })
 })
+
+function linkHuddlePage() {
+    window.open('https://redpangilinan.github.io/huddle-landing-page-with-alternating-blocks/', '_blank');
+}
