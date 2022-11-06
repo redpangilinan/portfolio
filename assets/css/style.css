@@ -5,6 +5,7 @@ body {
   background: linear-gradient(45deg, #EEEEEE, #FAF8F9, #FFFFFF);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  color: #343a40;
 }
 
 /* Custom Scrollbar */
@@ -109,6 +110,78 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
+/* Tags */
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  background-color: gray;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem 0.3rem;
+  text-align: center;
+  max-width: 10rem;
+  margin: 0.2rem 0.2rem 0.2rem;
+}
+
+/* Cards */
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.card-img-left {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card{
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 0 3px rgba(0,0,0,.08), 0 0 3px rgba(0,0,0,.05);
+}
+
+.card-hoverable {
+  transition: .3s;
+  cursor: pointer;
+}
+
+.card-hoverable:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-margin {
+  margin: 15px;
+}
+
+.card-title a {
+  color: #343a40;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.card img {
+  cursor: pointer;
+}
+
+.card-project {
+  width: 100%;
+  max-width: 700px;
+}
+
 /* Content */
 .home-banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/background.jpg');
@@ -148,37 +221,6 @@ body::-webkit-scrollbar-thumb:hover {
   transition: .3s;
 }
 
-.card-img-top {
-  width: 100%;
-  height: 15vw;
-  object-fit: cover;
-}
-
-.card-img-left {
-  height: 100%;
-  object-fit: cover;
-}
-
-.card{
-  margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
-  box-shadow: 0 0 3px rgba(0,0,0,.08), 0 0 3px rgba(0,0,0,.05);
-}
-
-.card-hoverable {
-  transition: .3s;
-  cursor: pointer;
-}
-
-.card-hoverable:hover{
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-
-.card-margin {
-  margin: 15px;
-}
-
 .resume-dl-btn {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -205,4 +247,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 .zoom:hover {
   transform: scale(1.05);
+}
+
+address a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+@media (max-width: 550px) {
+  section h5 {
+    font-size: 100%;
+  }
 }
