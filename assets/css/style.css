@@ -177,6 +177,11 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
 }
 
+.card-skill {
+  width: 100%;
+  max-width: 9rem;
+}
+
 .card-project {
   width: 100%;
   max-width: 60rem;
