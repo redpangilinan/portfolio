@@ -179,7 +179,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .card-project {
   width: 100%;
-  max-width: 700px;
+  max-width: 60rem;
 }
 
 /* Content */
