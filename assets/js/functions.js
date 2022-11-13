@@ -10,3 +10,7 @@ navLinks.forEach((l) => {
 function linkHuddlePage() {
     window.open('https://redpangilinan.github.io/huddle-landing-page-with-alternating-blocks/', '_blank');
 }
+
+function linkAdviceGen() {
+    window.open('https://advice-gen-proj.netlify.app/', '_blank');
+}
