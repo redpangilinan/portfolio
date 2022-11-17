@@ -1,7 +1,6 @@
 const navLinks = document.querySelectorAll('.nav-item')
 const menuToggle = document.getElementById('navbarNav')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
-window.addEventListener('load', () => { bsCollapse.hide() })
+const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
 window.addEventListener('scroll', () => { bsCollapse.hide() })
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { bsCollapse.hide() })
